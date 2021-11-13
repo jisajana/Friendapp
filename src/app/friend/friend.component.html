@@ -1,0 +1,20 @@
+<p>friend works!</p>
+
+Enter Friend ID<input type=number name=friendId [(ngModel)]=friend.friendId ><br>
+Enter Friend Name<input type=text name=friendName [(ngModel)]=friend.friendName><br>
+<button (click)="addFriend()">Add Friend</button> //functionality of the type script VS onclick<hr>
+Enter Friend ID<input type=number name=friendId [(ngModel)]=friend.friendId ><br>
+Enter Friend Name<input type=text name=friendName [(ngModel)]=friend.friendName><br>
+<button (click)="updateFriend()">Update Friend</button>
+<hr><hr>
+Enter Friend ID<input type=number name=friendId [(ngModel)]=friend.friendId ><br>
+<button (click)="deleteFriend()">Delete Friend</button>
+<hr><button (click)="showAllFriends()">Show All Friends</button>
+<table>
+    <tr *ngFor="let theFriends of allFriends ">
+        <td>friend id</td> <td>{{theFriends.friendId}} </td>
+        <td>friend id</td> <td>{{theFriends.friendName}} </td>
+    </tr>
+</table>
+
+
